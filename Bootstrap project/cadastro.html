@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--
+        Bootrstrap was used in header/navbar as long with dropdown menu required 
+        footer was done using CSS only 
+        at form jquary was used to validated fields 
+        bootstap was also used in the other pages as the main content placement 
+        aside was placed in index page with article 
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css"> -->
+    <meta name="Author" content=" Carolinna Aureliano">
+    <link rel="icon" href="./photos/2.png">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="index.html"> <img class="navlogo" src="./photos/2.png" alt="Logo"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item dropdown dropdown-toggle"> -->
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Fragrancias</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Fragrancias femininas</a>
+                            <a class="dropdown-item" href="#">Fragrancias masculinas</a>
+                            <a class="dropdown-item" href="#">Fragrancias unisex</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Travel size</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Banho e Corpo</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Oleos para o corpo</a>
+                            <a class="dropdown-item" href="#">Cremes para o corpo</a>
+                            <a class="dropdown-item" href="#">Cremes para as mãos</a>
+                            <a class="dropdown-item" href="#">Gel de banho</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Casa</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Velas perfumadas</a>
+                            <a class="dropdown-item" href="#">Aromatizador</a>
+                            <a class="dropdown-item" href="#">Spray aromatizador</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personalizacao.html">Personalização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quem somos.html">A AUCA</a>
+                    </li>
+                </ul>
+                <ul class="headericons">
+                    <li>
+                        <img class="serchicon" src="./photos/3844467_magnifier_search_zoom_icon.png" alt="icon">
+                    <li>
+                        <img class="bagicon" src="./photos/shopping-bag.png" alt="icon">
+                    </li>
+                    <li>
+                        <a href="cadastro.html"><img class="usericon" src="./photos/usericon.png" alt="icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mainform">
+        <div class="col-md-10 bg-light">
+        <h4>Fazer cadastro</h4>
+        <form id="formularioValidation" method="post" action="">
+            <div class="form-row align-content-center">
+                <div class="col-md-3 mb-3">
+                    <label for="cnome">Nome</label>
+                    <input type="text" class="form-control" id="cnome" name="nome" required minlength="2" placeholder="Nome">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="cnome">Sobrenome</label>
+                    <input type="text" class="form-control" id="cnome" name="nome" required minlength="2" placeholder="sobrenome">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="cemail">Email</label>
+                    <input type="text" class="form-control" id="cemail" name="email" placeholder="Email" required>
+                </div>
+            <div class="col-md-3 mb-3">
+                <label for="campo2"></label>Crie uma senha</label>
+                <input type="password" class="form-control"  id="campo2" placeholder="Senha" minlength="8">
+              </div>
+            <div class="form-row">
+                <div class="col-md-1 mb-1">
+                    <label for="campo3">CEP</label>
+                    <input type="text" class="form-control" id="campo3" placeholder="CEP" required maxlength="8"> 
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="campo4">endereço</label>
+                    <input type="text" class="form-control" id="campo4" placeholder="Rua, Nº" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="campo5">Cidade </label>
+                    <input type="text" class="form-control" id="campo5" placeholder="Cidade" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="campo6">Estado</label>
+                    <select class="form-control" id="campo6" name="Estado" required>
+                        <option selected>Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label>Complemento</label>
+                    <input type="text" class="form-control" placeholder="AP 15 bloco 4">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="campo7">Telefone</label>
+                    <input type="text" class="form-control" id="campo7" placeholder="Telefone" required>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Concordo com os termos de uso</label>
+                  </div>
+                  </div>
+  </div>
+            <button type="button" class="btn btn-secondary"  type="submit" >Cadastrar</button>
+            <button type="button" class="btn btn-secondary">Fazer login</button>
+        </form>
+    </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+       <section class="footerlinks">
+            <ul> 
+                <li><a href="#stores">Lojas</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#privacy">Politica de privacidade</a></li>
+            </ul>
+        </section>
+        <section class="footersocialmedia">
+            <ul>
+                <li><a href="#stores"> <img src="./photos/whatsapplogo.png" alt="Logo" class="socialslogo"></a></li>
+                <li><a href="#stores"> <img src="./photos/instagramlogo.png" alt="Logo" class="socialslogo"></a></li>
+                <li><a href="#stores"> <img src="./photos/tik-toklogo.png" alt="Logo" class="socialslogo"></a></li>
+                <li><a href="#stores"> <img src="./photos/twitterlogo.png" alt="Logo" class="socialslogo"></a></li>
+            </ul>
+        </section>
+    </div>
+    </footer>
+    <section id="copyright">
+        <p>&copy CGA S.A | todos os direitos reservados </p>
+    </section>
+
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+<!--LIBRAS plug in-->
+       
+        <!-- Inclusão do jQuery-->
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<!-- Inclusão do Plugin jQuery Validation-->
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+<script src="script.js"></script>
+<script src="http://jqueryvalidation.org/files/dist
+/additional-methods.min.js"></script>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    
+    
+    
+    </body>
+    
+    </html>

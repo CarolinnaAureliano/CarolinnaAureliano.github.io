@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--
+        Bootrstrap was used in header/navbar as long with dropdown menu required 
+        footer was done using CSS only 
+        at form jquary was used to validated fields 
+        bootstap was also used in the other pages as the main content placement 
+        aside was placed in index page with article 
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css"> -->
+    <meta name="Author" content=" Carolinna Aureliano">
+    <link rel="icon" href="./photos/2.png">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--header and navbar start-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="index.html"> <img class="navlogo" src="./photos/2.png" alt="Logo"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item dropdown dropdown-toggle"> -->
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Fragrancias</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Fragrancias femininas</a>
+                            <a class="dropdown-item" href="#">Fragrancias masculinas</a>
+                            <a class="dropdown-item" href="#">Fragrancias unisex</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Travel size</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Banho e Corpo</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Oleos para o corpo</a>
+                            <a class="dropdown-item" href="#">Cremes para o corpo</a>
+                            <a class="dropdown-item" href="#">Cremes para as mãos</a>
+                            <a class="dropdown-item" href="#">Gel de banho</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Casa</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Velas perfumadas</a>
+                            <a class="dropdown-item" href="#">Aromatizador</a>
+                            <a class="dropdown-item" href="#">Spray aromatizador</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personalizacao.html">Personalização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quem somos.html">A AUCA</a>
+                    </li>
+                </ul>
+                <ul class="headericons">
+                    <li>
+                        <img class="serchicon" src="./photos/3844467_magnifier_search_zoom_icon.png" alt="icon">
+                    <li>
+                        <img class="bagicon" src="./photos/shopping-bag.png" alt="icon">
+                    </li>
+                    <li>
+                        <a href="cadastro.html"><img class="usericon" src="./photos/usericon.png" alt="icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!--end of header-->
+<!--start of main content-->
+    <main class="indexmain">
+        <section class="container-fluid">
+            <div class="col col-12 ">
+                <div class="item">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                        data-interval="2300" >
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./photos/AdobeStock_271844414_Preview.jpeg" alt="model photo">
+                                <div class="carousel-caption">
+                                    <a href="produto.html"><button type="button" class="btn btn-outline-light">ver</button></a>
+                                  </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./photos/AdobeStock_214031722_Preview.jpeg" alt="perfum photo">
+                                <div class="carousel-caption">
+                                    <a href="produto.html"><button type="button" class="btn btn-outline-light">ver</button></a>
+                                  </div>
+                            </div>
+                            <!-- <div class="carousel-item">
+                                <img class="d-block w-100" src="AdobeStock_153549730_Preview.jpeg" alt="perfum photo">
+                            </div> -->
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./photos/AdobeStock_246469082_Preview.jpeg" alt="model photo">
+                                <div class="carousel-caption">
+                                    <a href="produto.html"><button type="button" class="btn btn-outline-light">ver</button></a>
+                                  </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./photos/AdobeStock_235719181_Preview.jpeg" alt="model photo">
+                                <div class="carousel-caption">
+                                    <a href="produto.html"><button type="button" class="btn btn-outline-light">ver</button></a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col col-8 ">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="./photos/4.png" alt="Card image">
+                    <h5>Nº6</h5>
+                    <div class="card-body">
+                        <p class="card-text">Floral Aldeídico Feminino. Com notas de topo em Aldeídos, Limão, Néroli,
+                            Tangerina, Laranja, Bergamota e Lima as notas de coração são Ylang Ylang, Jasmim e Rosa de
+                            Maio as notas de fundo são Almíscar Branco, Raíz de Orris ou lírio Florentino, Cedro e
+                            Baunilha.</p>
+                            <a class="nav-link" href="produto.html"><button type="button" class="btn btn-outline-secondary">Comprar</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./photos/3.png" alt="Card image">
+                    <h5>Nº11</h5>
+                    <div class="card-body">
+                        <p class="card-text">Amadeirado Masculino. Com notas de topo de Cardamomo, Açafrão, Bergamota,
+                            as notas de coração são Canela, Pralinê, Gerânio, Óleo de Cipriol e Gurjan as notas de fundo
+                            são Agarwood (Oud), Copaíba, Patchouli, Sândalo, Cedro, Almíscar, Âmbar, Cashmeran.</p>
+                            <a class="nav-link" href="produto.html"><button type="button" class="btn btn-outline-secondary">Comprar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <div class="col col-4">
+                <article class="card">
+                    <!-- <img class="card-img" src="fotoespecial.png" alt="Card image"> -->
+                        <blockquote class="blockquote mb-0">
+                            <p class="notes">"Projetadas para complementar a pele em sua forma mais verdadeira"</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                    Anna Wintour <cite title="Source Title">Vogue</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                        <a class="nav-link" href="produto.html"><button type="button" class="btn btn-outline-secondary">Descobrir</button></a>
+                    </article>
+                    <article class="card">
+                        <!-- <img class="card-img" src="fotoespecial.png" alt="Card image"> -->
+                            <blockquote class="blockquote mb-0">
+                                <p class="notes">
+                                    "Idôle é despretensioso. Chique e casual ao mesmo tempo. Tipo aquele coque despojado que te deixa elegante e moderna.
+                                    É o perfume da mulher contemporânea que, na correria do dia a dia, precisa de algo que a acompanhe em qualquer ocasião: trabalho, reuniões e festas.
+                                    Saída com uma pêra adocicada e suculenta, logo depois rosas almiscardas. Simples, direto ao ponto e é isso que o torna tão especial!"</p>
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                        Fernanda Diniz<cite title="Source Title"> Perfumista </cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                            <a class="nav-link" href="produto.html"><button type="button" class="btn btn-outline-secondary">Ver mais resenhas</button></a>
+                        </article>
+        </aside>
+        </section>
+        <div class="col col-8 ">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="./photos/5.png" alt="Card image">
+                    <h5>Química</h5>
+                    <div class="card-body">
+                        <p class="card-text">As notas de topo são Romã, Pimenta Rosa, Cardamomo e Toranja as notas de coração são Jasmim Sambac, Flor de Laranjeira, Ameixa, Rosa e Violeta as notas de fundo são Cedro, Patchouli ou Oriza, Sândalo, benjoim, Nagarmota ou Óleo de Cipriol e Baunilha.</p>
+                        <a class="nav-link" href="produto.html"><button type="button" class="btn btn-outline-secondary">Comprar</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./photos/6.png" alt="Card image">
+                    <h5>Sauvage Elixir</h5>
+                    <div class="card-body">
+                        <p class="card-text"> As notas de topo são Ameixa, Canela chinesa, Íris, Violeta, Lírio, Anis, Jasmim, Mimosa e Cássia as notas de coração são Ylang Ylang, lírio Florentino, Flor de Laranjeira e Flor de Tiaré tahitiana as notas de fundo são Incenso, Baunilha, Benjoim, Sândalo e Almíscar.</p>
+                        <a class="nav-link" href="produto.html"><button type="button" class="btn btn-outline-secondary">Comprar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>           
+        </section>
+    </main>
+<!--end of main content-->
+    </div>
+<!--footer-->
+    <footer>
+        <div class="container">
+       <section class="footerlinks">
+            <ul> 
+                <li><a href="#stores">Lojas</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#privacy">Politica de privacidade</a></li>
+            </ul>
+        </section>
+        <section class="footersocialmedia">
+            <ul>
+                <li><a href="#stores"> <img src="./photos/whatsapplogo.png" alt="Logo" class="socialslogo"></a></li>
+                <li><a href="#stores"> <img src="./photos/instagramlogo.png" alt="Logo" class="socialslogo"></a></li>
+                <li><a href="#stores"> <img src="./photos/tik-toklogo.png" alt="Logo" class="socialslogo"></a></li>
+                <li><a href="#stores"> <img src="./photos/twitterlogo.png" alt="Logo" class="socialslogo"></a></li>
+            </ul>
+        </section>
+    </div>
+    </footer>
+
+    <section class="copyright">
+        <p>&copy CGA S.A | todos os direitos reservados</p>
+    </section>
+</section>
+<!--end of footer-->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./photos/upwards-arrow.png " class="arrow"></button> 
+<!--back to top button-->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+<!--LIBRAS plug in-->
+<script src="script.js"></script>
+</body>
+<!--list of links to jquery and bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
